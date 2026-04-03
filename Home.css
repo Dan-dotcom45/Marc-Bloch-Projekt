@@ -1,0 +1,197 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins');
+:root{
+    --text-color: #BDC3C7;
+    --accent-color: #C5A059;
+    --sidebar-bg: #2C3E43;
+
+}
+body{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins';
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'main main';
+    background-color: var(--sidebar-bg);
+    border-left: 2px solid black;
+}
+#sidebar{
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    text-decoration:none;
+    box-sizing: border-box;
+    min-height: 100dvh;
+    padding: 5px 1em;
+    display: flex;
+    flex-direction: column;
+    margin-right:20px ;
+}
+
+.marc-bloch-container{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: var(--accent-color);
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#Collapse-Btn {
+    background: var(--sidebar-bg);
+    border-radius: 20%;
+    border: 2px solid var(--text-color);
+    position: fixed;
+    top: 20px;
+    left: 180px;
+    padding-top: 5px;
+    margin-right: none;
+    z-index: 999;
+}
+
+#Collapse-Btn:hover {
+    background: var(--sidebar-bg);
+    border-radius: 20%;
+    border: 2px solid var(--text-color);
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.list-element{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 2px solid var(--text-color);
+}
+
+.list-element:hover{
+    text-indent: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 2px solid var(--text-color);
+    border-left: 1dvh solid var(--accent-color);
+    transition: linear 150ms;
+    color: var(--accent-color);
+}
+
+
+.Quiz-wrapper{
+    margin-left: 10px;
+}
+/* Sanfter Übergang für das Layout */
+body {
+    transition: grid-template-columns 250ms ease;
+}
+
+/* Wenn die Sidebar die Klasse .collapsed hat */
+#sidebar.collapsed {
+    transform: translateX(-100%);
+    position: absolute; /* Verhindert, dass sie Platz wegnimmt */
+}
+
+/* Den Hauptteil (Main) verbreitern, wenn die Sidebar weg ist */
+#sidebar.collapsed + main {
+    margin-left: 0;
+    grid-column: 1 / span 2; /* Nutzt den Platz der Sidebar mit */
+}
+
+/* Animation für den Button */
+#Collapse-Btn {
+    transition: all 250ms ease;
+}
+
+main{
+    background-color: #2c3e43dc;
+    grid-area: 'main';
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px; /* Standardhöhe der Boxen */
+    gap: 20px;
+    padding: 20px;
+}
+
+.bento-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(197, 160, 89, 0.3); /* Dezentes Gold */
+    border-radius: 15px;
+    padding: 20px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.bento-item:hover {
+    transform: scale(1.02);
+    border-color: var(--accent-color);
+}
+
+/* Spezialgrößen für das Bento-Gefühl */
+.Video-Deutsch {
+    grid-column: span 2;
+    grid-row: span 2;
+    background: #000; /* Platzhalter für Video */
+}
+
+.video-en-francais{
+    grid-column: span 1;
+    background: #1a1a1a;
+}
+
+.quiz-box {
+    grid-column: span 2;
+    background-color: var(--accent-color);
+    color: #2C3E43;
+    align-items: center;
+}
+
+.quiz-btn {
+    background: #2C3E43;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.Citation-Marc-Bloch {
+    font-style: italic;
+    text-align: center;
+    border-left: 10px solid var(--accent-color);
+    opacity: 70%;
+    border-right: 1px solid var(--accent-color) ;
+    border-bottom:1px solid var(--accent-color);
+    border-top: 1px solid var(--accent-color);
+    border-radius: 20px;
+}
+
+.video-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.Marc-Bloch-Banner{
+    border-radius: 20px ;
+}
+
+.Video-Deutsch{
+    border-radius: 20px;
+}
+
+.banner{
+    display: flex ;
+    justify-content: center;
+}

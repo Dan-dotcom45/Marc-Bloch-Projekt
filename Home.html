@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <nav id="sidebar">
+        <div class="marc-bloch-container" >
+            <h2> Marc Bloch </h2>
+            <img src="assets/Marc-Bloch- Icon-Image.jpg" height="150dvh" width="150dvh" style="border: 3px solid #C5A059; border-radius: 100px;" class="Marc-Bloch-Img" >
+            <h4> Akademiker & Soldat </h4>
+            
+        </div>
+        <ul>
+            <li class="list-element">
+                <a href="#"> 
+                    <img src="assets/home-solid.svg" height="24px">
+                    <span> Startseite </span> 
+                </a>
+            </li>
+            <li class="list-element">
+                <a href="#"> 
+                    <img src="assets/circle-info-solid-full.svg" height="24px">
+                    <span> Über Marc Bloch </span> 
+                </a>
+            </li>
+            <li class="list-element">
+                <a href="#"> 
+                    <img src="assets/location-dot-solid-full.svg" height="24px"> 
+                    <span> Karte </span> 
+                </a>
+            </li>
+            <li class="list-element">
+                <a href="#"> 
+                    <img src="assets/calendar-days-solid-full.svg" height="24px"> 
+                    <span> Zeitleiste </span> 
+                </a>
+            </li>
+            <li class="list-element" onclick="
+            window.location.replace(/* Quiz page link */)
+            ">
+                <a href="#"> 
+                    <img src="assets//brain-solid-full.svg" height="24px">
+                    <span> Quiz </span> 
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <button id="Collapse-Btn"><img src="assets/angles-left-solid-full.svg" height="20dvh" ></button>
+    <main>
+    <div class="banner"> 
+        <img src="assets/Marc Bloch - Banner.png" width="95%" height="auto" class="Marc-Bloch-Banner">
+    </div>
+
+    <div class="bento-grid">
+            <div class="video-placeholder">
+                <video src="assets/Marc Bloch Video.mp4" height="100%" width="auto" class="Video-Deutsch" controls></video>
+        </div>
+
+        <div class="bento-item video-en-francais">
+            <video src="assets/Marc Bloch Video (Französisch).mp4" height="100%" width="auto" controls></video>
+        </div>
+
+        <div class="Citation-Marc-Bloch">
+            <p >"L'histoire est la science des hommes dans le temps."</p>
+            <span>- Marc Bloch</span>
+        </div>
+
+        <div class="bento-item quiz-box">
+            <h3>Bereit für das Quiz?</h3>
+            <p>Teste dein Wissen über Marc Bloch.</p>
+            <a href="#" class="quiz-btn">Jetzt Starten</a>
+        </div>
+
+        <div class="bento-item team">
+            <p>Ein Projekt von:</p>
+            <small>Patrick, Jakob, Raphael, Francois & Dan</small>
+        </div>
+    </div>
+</main>
+    
+    <script src="Home.js"></script>
+</body>
+</html>

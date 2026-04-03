@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+    <nav id="sidebar">
+        <div class="marc-bloch-container" >
+            <h2> Marc Bloch </h2>
+            <img src="assets/Marc-Bloch- Icon-Image.jpg" height="150dvh" width="150dvh" style="border: 3px solid #C5A059; border-radius: 100px;" class="Marc-Bloch-Img" >
+            <h4> Akademiker & Soldat </h4>
+            
+        </div>
+        <ul>
+            <li class="list-element">
+                <a href="#"> 
+                    <img src="assets/home-solid.svg" height="24px">
+                    <span> Startseite </span> 
+                </a>
+            </li>
+            <li class="list-element">
+                <a href="#"> 
+                    <img src="assets/circle-info-solid-full.svg" height="24px">
+                    <span> Über Marc Bloch </span> 
+                </a>
+            </li>
+            <li class="list-element">
+                <a href="#"> 
+                    <img src="assets/location-dot-solid-full.svg" height="24px"> 
+                    <span> Karte </span> 
+                </a>
+            </li>
+            <li class="list-element">
+                <a href="#"> 
+                    <img src="assets/calendar-days-solid-full.svg" height="24px"> 
+                    <span> Zeitleiste </span> 
+                </a>
+            </li>
+            <li class="list-element" onclick="
+            window.location.replace(/* Quiz page link */)
+            ">
+                <a href="#"> 
+                    <img src="assets//brain-solid-full.svg" height="24px">
+                    <span> Quiz </span> 
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <button id="Collapse-Btn"><img src="assets/angles-left-solid-full.svg" height="20dvh" ></button>
+    <main>
+        <div id="quiz-container" width="90%" height="auto">
+            <h2 id="question-text">Frage lädt...</h2>
+            <div id="options-container"></div>
+            <div id="feedback" style="margin-top: 20px; font-weight: bold;"></div>
+        </div>
+    </main>
+        <script src="Quiz-questions/Quiz.js"></script>
+        <script src="Quiz.js"></script>
+</body>
+</html>
