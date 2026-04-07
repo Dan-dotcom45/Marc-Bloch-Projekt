@@ -101,6 +101,7 @@ body {
 }
 
 main{
+    margin-top: 20px;
     background-color: #2c3e43dc;
     grid-area: 'main';
 }
@@ -133,12 +134,11 @@ main{
 }
 
 main {
-    transition: margin-left 250ms ease; /* Macht die Verschiebung flüssig */
+    transition: margin-left 250ms ease;
     width: 100%;
 }
 
-/* Falls dein Body ein Grid ist, müssen wir sicherstellen, dass Main die volle Breite nehmen darf */
 body {
-    display: flex; /* Flexbox ist oft einfacher für Sidebar-Layouts als Grid */
+    display: flex;
     overflow-x: hidden;
 }
