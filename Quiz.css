@@ -104,6 +104,9 @@ main{
     margin-top: 20px;
     background-color: #2c3e43dc;
     grid-area: 'main';
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .quiz-option-btn{
